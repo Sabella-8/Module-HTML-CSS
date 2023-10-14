@@ -24,6 +24,7 @@ justify-content:space-between;
 .mylinks{
     display: none;
 } 
+#toggle:checked+.mylinks{ display: block;}
 .flexxy{
     display: flex;
     flex-direction: column;
@@ -92,7 +93,9 @@ font-family:Arial, Helvetica, sans-serif;
 
   
 }
-
+.d a:hover{
+  background-color: #f5b7be;
+}
 footer p{
   color: #f2f2f2;
   text-align: center;
@@ -138,13 +141,18 @@ display: block;
 text-align: end;
 
 }
+#toggle{display: none;}
 .menu{
   display: none;
 }
 .mylinks a{
     padding: 2.5%;
     color: #f2f2f2;
-    
+   
+}
+.mylinks a:hover{
+ box-shadow: 0px -1px 0px white inset, 200px 0 0 rgb(48, 9, 5) inset;
+ padding: 35px;
 }
 main{ margin-top: 5%;}
 
